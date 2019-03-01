@@ -11,9 +11,9 @@ install:
   - pip install coverage
   
 script: 
-  - python -m unittest # command to run unit test
+  - python -m unittest test.py  # command to run unit test
   - coverage run test.py # command to run code coverage
 #can do additional things, say send out reports, which we will discuss next time
 
 after_success:
-  - codecov -s
+  - codecov
